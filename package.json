@@ -1,0 +1,20 @@
+{
+  "name": "mlg-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.0.0",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
