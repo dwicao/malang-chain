@@ -17,6 +17,12 @@ class Block {
     return sha256(`${timestamp}${lastHash}${data}`).toString();
   }
 
+  static blockHash(block) {
+    const {timestamp, lastHash, data} = block;
+
+    return Block.hash(timestamp, lastHash, data);
+  }
+
   constructor(timestamp, lastHash, hash, data) {
     this.timestamp = timestamp;
     this.lastHash = lastHash;
