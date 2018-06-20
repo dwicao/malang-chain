@@ -9,6 +9,12 @@ class Wallet {
     this.publicKey = this.keyPair.getPublic().encode('hex');
   }
 
+  static blockchainWallet() {
+    const blockchainWallet = new this();
+    blockchainWallet.address = 'blockchain-wallet';
+    return blockchainWallet;
+  }
+
   toString() {
     return `Wallet -
       Public Key  : ${this.publicKey.toString()}
